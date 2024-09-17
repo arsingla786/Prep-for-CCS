@@ -1,0 +1,14 @@
+//tHIS IS USED TO COMMENT OUT  A LINE 
+
+//first c code 
+#include<stdo.h>
+int main (){
+printf("I love CCS");
+}
+
+//output: I love CCS
+
+
+
+
+

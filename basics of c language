@@ -1,3 +1,4 @@
+𝐃𝐚𝐲 𝟏
 //tHIS IS USED TO COMMENT OUT  A LINE 
 
 //FIRST C CODE 
@@ -11,7 +12,7 @@ return 0;
 //output: I love CCS
 
 
-
+....................................................................................................................................
 
 
 //TAKING INPUT AND PRINTING IT 
@@ -24,6 +25,23 @@ printf("you entered %d\n", a); // \n is used to print in next line
 scanf("%f",&b);
 printf("you entered %f\n", b);
 }
+
+......................................................................................................................................
+
+//PRINT SUM OF TWO NUMBERS 
+
+#include<stdio.h>    
+int main(){  
+
+int x,y;  
+printf("enter first number ");  
+scanf("%d",&x);  
+printf("enter second number ");  
+scanf("%d",&y);    
+printf("sum of 2 numbers:%d ",x+y);   
+}    
+
+........................................................................................................................................
 
 
 

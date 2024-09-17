@@ -1,12 +1,37 @@
 //tHIS IS USED TO COMMENT OUT  A LINE 
 
-//first c code 
-#include<stdo.h>
-int main (){
-printf("I love CCS");
+//FIRST C CODE 
+
+#include<stdio.h>          //this is a header file  of c language 
+int main (){               //main function from where programm start execution
+printf("I love CCS");      //command to print something 
+return 0;                
 }
 
 //output: I love CCS
+
+
+
+
+
+//TAKING INPUT AND PRINTING IT 
+#include<stdio.h>
+int main(){
+int a;  
+float b;
+scanf("%d",&a);                //scanf is used to take an input from user 
+printf("you entered %d\n", a); // \n is used to print in next line 
+scanf("%f",&b);
+printf("you entered %f\n", b);
+}
+
+
+
+
+
+
+
+
 
 
 

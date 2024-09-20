@@ -1,5 +1,5 @@
-𝐃𝐚𝐲 𝟏
-//tHIS IS USED TO COMMENT OUT  A LINE 
+
+(//)tHIS IS USED TO COMMENT OUT  A LINE 
 
 //FIRST C CODE 
 
@@ -28,7 +28,7 @@ printf("you entered %f\n", b);
 
 ......................................................................................................................................
 
-//PRINT SUM OF TWO NUMBERS 
+//PRINT SUM,PROFUCT,REMAINDER OF TWO NUMBERS 
 
 #include<stdio.h>    
 int main(){  
@@ -38,20 +38,168 @@ printf("enter first number ");
 scanf("%d",&x);  
 printf("enter second number ");  
 scanf("%d",&y);    
-printf("sum of 2 numbers:%d ",x+y);   
+printf("sum of 2 numbers:%d\n ",x+y);  
+printf("product : %d\n",x*y);
+printf("remainder: %f\n",x%y);
+
 }    
 
 ........................................................................................................................................
+//PRINTING ASCII VALUES
+#include <stdio.h>  
+int main() { 
 
+    char ch;    // variable declaration  
+    printf("Enter a character");  
+    scanf("%c",&ch);  // user input  
+    printf("\n The ascii value is %d", ch);  
+}  
+.........................................................................................................................................
+Q//FIND AREA AND PERIMETER OF CIRCLE 
+#include <stdio.h>
 
+int main()
+{
+    int radius;
+    printf("enter radius :");
+    scanf("%d",&radius);
+    
+    float pie=3.14;
+    printf("\nArea of circle = %f",pie*radius*radius);
+    printf("\nPerimeter of circle= %f ",2*pie*radius);
+    
+}
+.........................................................................................................................................
+Q//CONVERT TOTAL DAYS TO YEARS WEEKS DAYS
+#include <stdio.h>
+int main()
+{
+    int days;
+    printf("enter days :");
+    scanf("%d",&days);
+    int years= days/365;
+    int weeks= ((days)-(years*365))/7;
+    int remaining_days=  ((days)-(years*365)-(weeks*7));
+    
+    printf("No. of years = %d\n", years);
+    printf("No. of weeks = %d\n",weeks );
+    printf("No. of remaing days =%d\n", remaining_days);    
+}
+........................................................................................................................................
+Q//AVERAGE OF TWO NUMBERS
+#include <stdio.h>
 
+int main()
+{
+    int a,b;
+    printf("enter two numbers :");
+    scanf("%d,%d",&a,&b);
+    
+    printf("average of two numbers = %f", (a+b)/2.00);    
+}
+..........................................................................................................................................
+//USE OF IF-ELSE 
+//DETERMINE EVEN OR ODD
+#include<stdio.h>
+int main(){
+int n;
+printf("enter n ");
+scanf("%d",&n);
+if(n%2==0){
+printf("EVEN");
+}
+else 
+printf("ODD");
+}
+...........................................................................................................................................
+//CHECK IF YOU CAN VOTE OR NOT
+#include <stdio.h>  
+int main(){ 
+ int age;   
+ printf("Enter your age?");   
+ scanf("%d",&age);  
+ if(age>=18) {
+       printf("you can vote ");   
+    }  
+    else  
+     printf("you cant vote");        
+}  
+...........................................................................................................................................
 
+Q//PRINT THE LARGEST NUMBER OF THREE 
+#include <stdio.h>
 
+int main()
+{
+    int a,b,c;
+    printf("enter three numbers :");
+    scanf("%d %d %d",&a,&b,&c);
+    
+    if(a>b &&  a>c){
+        printf("%d is largest ",a);
+        
+    }
+    
+    if(b>a && b>c){
+        printf("%d is largest ",b);
+        
+        
+    }
+    
+    if(c>a && c>b)
+{
+    printf("%d is largest ", c);
+    
+}    
+else {
+    printf("none is largest");
+}
+    
+    
+    
+}
+.............................................................................................................................................
 
-
-
-
-
-
-
+//PROGRAM TO CHECK FAIL OR PASS 
+#inclue<stdio.h>
+int main(){
+int marks;
+printf("Enter marks out of hundred :");
+scanf("%d",&marks);
+if(marks<0||marks>100){
+printf("invalid");
+}
+else if(marks>=33){
+printf("PASS");
+else
+printf("FAIL");
+}
+.............................................................................................................................................
+//PROGRAMM TO CHECK GRADE(A,B,C,F)
+#include <stdio.h>  
+int main()  
+{  
+    int marks;   
+    printf("Enter marks ");  
+    scanf("%d",&marks);   
+    if(marks > 85 && marks <= 100)  
+    {  
+     printf("grade A");   
+    }  
+    else if (marks > 60 && marks <= 85)   
+    {  
+    printf(" grade B");  
+    }    
+else if (marks > 40 && marks <= 60)   
+    {  
+   printf(" grade C");  
+    }  
+    else if (marks > 30 && marks <= 40)   
+    {  
+        printf("You scored grade D");   
+    }  
+    else   
+   printf("Fail");    
+}
+..........................................................................................................................................
 

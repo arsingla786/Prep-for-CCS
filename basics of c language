@@ -304,4 +304,113 @@ else if (marks > 40 && marks <= 60)
    printf("Fail");    
 }
 ..........................................................................................................................................
+//INPUT THREE SIDES AND CHECK TRIANGLE IS POSSIBLE AND PRINT PERIMETER
+#include<stdio.h>
+int main() {
+    float  x, y, z, P, A; 
 
+    
+    printf("\nEnter x : "); 
+    scanf("%f", &x);
+    printf("\nEnter y : ");
+    scanf("%f", &y);
+    printf("\nEnter z : ");
+    scanf("%f", &z);
+
+    if(x+y>z && y+z>x && z+x>y)
+     {  
+        P = x+y+z; 
+    printf("\nYes triangle exists ");
+        printf("\nPerimeter  = %f\nP); 
+    }
+    else
+    {
+        printf("No triangle exist !!"); 
+}
+    
+    return 0;
+}
+..........................................................................................................................................
+Q//check if m is multiple of n 
+#include <stdio.h>
+
+int main()
+{
+ int n,m; 
+ printf("Enter n amd m ");
+ scanf("%d%d", &n,&m);
+ 
+ if(m%n==0){
+     printf("m is multiple of n ");
+     
+ }
+ else {
+     printf("m is not a multiple of n");
+     
+ }
+ 
+}
+..........................................................................................................................................
+//USING SWITCH TO PRINT MONTH WITH INPUT OF NUMBER
+
+#include<stdio.h>
+int main(){
+    int month;
+    printf("enter month number(1 to 12) : ");
+    scanf("%d",&month);
+    
+    switch (month){
+        case 1: printf("\njanuary");
+        break;
+         case 2: printf("\nfebruary ");
+        break;
+         case 3: printf("\nmarch");
+        break;
+         case 4: printf("\napril");
+        break;
+         case 5: printf("\nmay");
+        break;
+         case 6: printf("\njune");
+        break;
+         case 7: printf("\njuly");
+        break;
+         case 8: printf("\naugust");
+        break;
+         case 9: printf("\nseptember");
+        break;
+         case 10: printf("\noctober");
+        break;
+         case 11: printf("\nnovember");
+        break;
+         case 12: printf("\ndecenber");
+        break;
+        
+        default: printf("invalid");
+        
+        }    
+}
+
+........................................................................................................................................
+//LOOPS(FOR LOOP)
+
+
+//PRINT ALL EVEN NUMBERS BETWEEN m AND n
+#include<stdio.h>
+int main (){
+    int n,m,i;
+    printf("enter m ");
+    scanf("%d",&m);
+    printf("enter n ");
+    scanf("%d",&n);
+    
+    for(i=m;i<=n;i++){
+        if(i%2==0){
+            printf("%d\n",i);
+        }
+    }
+    
+
+}
+
+......................................................................................................................................
+//

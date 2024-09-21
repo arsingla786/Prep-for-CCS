@@ -98,6 +98,80 @@ int main()
     printf("average of two numbers = %f", (a+b)/2.00);    
 }
 ..........................................................................................................................................
+//DISTANCE BETWEEN TWO POINTS 
+
+#include <stdio.h>
+#include<math.h>
+
+int main()
+{
+	int x1,x2,y1,y2;
+	printf("enter x1:");
+	scanf("%d",&x1);
+	printf("enter x2:");
+	scanf("%d",&x2);
+
+	printf("enter y1:");
+	scanf("%d",&y1);
+	printf("enter y2:");
+	scanf("%d",&y2);
+
+
+	printf("Distance = %f", sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1))));
+
+
+}
+...............................................................................................................................................
+//Divide given amount into notes of 100 , 50, 20 , 10, 5,2,1
+
+#include <stdio.h>
+
+int main()
+{
+	int n;
+	printf("enter n:");
+	scanf("%d",&n);
+	
+	
+	int notesof100 = n/100;
+	printf("\nnotes of 100 = %d ",notesof100);
+	
+	int notesof50= ((n)-(notesof100*100))/50;
+	printf("\nnotes of 50 = %d",notesof50);
+	
+	int notesof20= ((n)-(notesof100*100)-(notesof50*50))/20;
+	printf("\nnotes of 20 = %d",notesof20);
+	
+		int notesof10= ((n)-(notesof100*100)-(notesof50*50)-(notesof20*20))/10;
+	printf("\nnotes of 10 = %d",notesof10);
+	
+		int notesof5= ((n)-(notesof100*100)-(notesof50*50)-(notesof20*20)-(notesof10*10))/5;
+	printf("\nnotes of 5 = %d",notesof5);
+	
+	int notesof2= ((n)-(notesof100*100)-(notesof50*50)-(notesof20*20)-(notesof10*10)-(notesof5*5))/2;
+	printf("\nnotes of 2 = %d",notesof2);
+	
+		int notesof1= ((n)-(notesof100*100)-(notesof50*50)-(notesof20*20)-(notesof10*10)-(notesof5*5)-(notesof2*2))/1;
+	printf("\nnotes of 1 = %d",notesof1);
+
+}
+...........................................................................................................................................
+//divide sconds into hours , minutes , seconds 
+
+#include<stdio.h>
+int main(){
+    int s;
+    printf("enter seconds :");
+    scanf("%d",&s);
+    
+    int hours = s/3600;
+    int minutes = ((s)-(hours*3600))/60;
+    int seconds = ((s)-(hours*3600)-(minutes*60))/1;
+    
+    printf("\nH:M:S= %d:%d:%d", hours,minutes,seconds);
+}
+...........................................................................................................................................
+
 //USE OF IF-ELSE 
 //DETERMINE EVEN OR ODD
 #include<stdio.h>
@@ -125,7 +199,35 @@ int main(){
      printf("you cant vote");        
 }  
 ...........................................................................................................................................
-
+Q//Print Range of a number 
+#include<stdio.h>
+int main (){
+    int n;
+    printf("enter n :");
+    scanf("%d",&n);
+    
+    if(n>=0 && n<=20){
+        printf("\n Range =[0,20] ");
+        
+    }
+    
+     if(n>=21 && n<=40){
+        printf("\n Range =[21,40] ");
+        
+    }
+     if(n>=41&& n<=60){
+        printf("\n Range =[41,60] ");
+        
+    } if(n>=61 && n<=80){
+        printf("\n Range =[61,80] ");
+        
+    } 
+    else if(n<0 || n>80){
+        printf("\n Error! ");
+        
+    }
+}
+............................................................................................................................................
 Q//PRINT THE LARGEST NUMBER OF THREE 
 #include <stdio.h>
 

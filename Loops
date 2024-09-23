@@ -104,7 +104,107 @@ for(i=0;i<5;i++){
 
 }
 ..........................................................................................................................................
+//FIND NUMBER OF ODD AND EVEN NUMBRS AND PRINT AVERAGE OF ODD NUMBERS
 
 
+#include <stdio.h>
 
+int main()
+{
+    int  number[5], i ,even=0,odd=0,average,total  ;
+    
+    for(i=0;i<5;i++){
+        printf("Enter Number %d :", i+1);
+        scanf("%d",&number[i]);
+        
+    }
+    
+    for(i=0;i<5;i++){
+        if(number[i]%2==0){
+            even++;
+            
+        }
+        
+        if(number[i]%2 != 0){
+            odd++;
+            
+        }
+        
+        
+    }
+    printf("Odd numbers = %d\n", odd);
+    printf("Even numbers = %d\n", even);
+    
+   for(i=0;i<5;i++){
+       if(number[i]%2 !=0 ){
+           total += number[i];
+           
+       }
+   }
+   
+   printf("average of odd numbers = %f ", total / odd*1.0 );
+   
+   
+
+}
+...........................................................................................................................................
+//PRINT SQUARES OF ALL EVEN NUMBERS BETWEEN 1 and n(n is entered by user) 
+
+
+#include <stdio.h>
+
+int main()
+{
+    int n , i ;
+    
+    printf("Enter n ");
+    scanf("%d",&n);
+    
+    for(i=1;i<=n;i++){
+        if(i%2==0){
+            printf("%d^%d = %d\n", i,2, i*i);
+            
+        }
+    }
+    
+   
+
+}
+..........................................................................................................................................
+//DETERMINE NATURE OF AN INTEGER 
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    printf("enter n ");
+    scanf("%d",&n);
+    
+    if(n>0 && n%2==0){
+        printf("positive even ");
+        
+    }
+    
+    if(n>0 && n%2 != 0){
+        printf("positive odd  ");
+        
+    }
+    
+    if(n<0 && n%2==0){
+        printf("negative even ");
+        
+    }
+    if(n<0 && n%2 !=0 ){
+        printf("negative odd ");
+        
+    }
+    
+    if (n==0){
+        printf("zero ");
+    }
+    
+   
+
+}
+..........................................................................................................................................
 
